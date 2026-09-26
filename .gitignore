@@ -1,0 +1,19 @@
+node_modules/
+.next/
+out/
+.env
+.env*.local
+*.tsbuildinfo
+vitest-results.json
+*.log
+
+# AI 工具产物（本机会话/缓存数据，不入库）
+.mimosa/
+.zcode/
+.codebuddy/
+generated-images/
+.monkeycode-tmp-files/
+
+# 本地数据源清单与备份（个人数据，不入库）
+源列表_全量.json
+源列表_全量.原始备份.json
