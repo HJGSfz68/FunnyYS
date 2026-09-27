@@ -30,6 +30,16 @@ echo "FUNNYYS_IMAGE=ghcr.io/hjgsfz68/funnyys:latest" > .env
 docker compose pull && docker compose up -d
 ```
 
+### 一键部署脚本
+
+适用于新装系统的低配服务器（自动检测环境、安装依赖、创建交换分区）：
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/HJGSfz68/FunnyYS/main/deploy.sh)
+```
+
+脚本自动判断：有 Docker 则用 Docker Compose 部署，有 Node 则源码构建，都没有则安装 Docker。同时预置仓库内的 22 个数据源（`源列表_全量.json`）。
+
 ### 手动运行
 
 ```bash
